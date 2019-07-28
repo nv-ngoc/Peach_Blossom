@@ -17,6 +17,10 @@ gem "rubocop", require: false
 gem "sass-rails", "~> 5.0"
 gem "slim-rails"
 gem "uglifier", ">= 1.3.0"
+gem "bootstrap", "~> 4.3.1"
+gem "jquery-rails"
+gem "font-awesome-sass", "~> 5.8.1"
+gem "devise"
 
 group :development, :test do
   gem "capybara", ">= 2.15"

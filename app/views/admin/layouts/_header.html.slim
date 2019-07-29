@@ -12,7 +12,7 @@
         li.nav-item.dropdown
           = link_to "#", class: "a nav-link pr-0", data: { toggle: "dropdown" }
             .media.align-items-center
-              span Jessica Jones
+              span #{current_user.username}
               | &emsp;
               span.avatar.avatar-sm.rounded-circle
                 = image_tag "team-4-800x800.jpg"
@@ -28,7 +28,7 @@
             = link_to "#", class: "dropdown-item"
               span Support
             .dropdown-divider
-            = link_to "#", class: "dropdown-item"
+            = link_to destroy_user_session_path, class: "dropdown-item"
               span Logout
   .header.bg-gradient-primary.pb-8.pt-5.pt-md-8
     br

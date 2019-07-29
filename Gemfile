@@ -21,6 +21,7 @@ gem "bootstrap", "~> 4.3.1"
 gem "jquery-rails"
 gem "font-awesome-sass", "~> 5.8.1"
 gem "devise"
+gem "faker", "~> 1.6", ">= 1.6.6"
 
 group :development, :test do
   gem "capybara", ">= 2.15"

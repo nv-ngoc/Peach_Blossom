@@ -10,6 +10,12 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery.min
 //= require rails-ujs
-//= require turbolinks
-//= require_tree .
+//= require jquery3
+//= require popper
+//= require bootstrap
+//= require lib/argon-dashboard
+//= require lib/argon-dashboard.map
+//= require lib/argon-dashboard.min
+//= require lib/argon.min

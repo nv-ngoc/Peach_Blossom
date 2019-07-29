@@ -1,0 +1,30 @@
+nav#sidenav-main.navbar.navbar-vertical.fixed-left.navbar-expand-md.navbar-light.bg-white
+  .container-fluid
+    = link_to "#", class: "navbar-brand pt-0"
+      = image_tag "blue.png"
+    #sidenav-collapse-main.collapse.navbar-collapse
+      ul.navbar-nav
+        li.nav-item
+          = link_to "#", class: "nav-link active"
+            i.fas.fa-tachometer-alt
+            | Dashboard
+        li.nav-item
+          = link_to "#", class: "nav-link"
+            i.fas.fa-map-marked-alt
+            | Maps
+        li.nav-item
+          = link_to "#", class: "nav-link"
+            i.fas.fa-user
+            | User profile
+        li.nav-item
+          = link_to "#", class: "nav-link"
+            i.fas.fa-table
+            | Tables
+        li.nav-item
+          = link_to "#", class: "nav-link" 
+            i.fas.fa-sign-in-alt
+            | Login
+        li.nav-item
+          = link_to "#", class: "nav-link" 
+            i.fas.fa-registered
+            | Register

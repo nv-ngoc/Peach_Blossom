@@ -21,10 +21,6 @@ nav#sidenav-main.navbar.navbar-vertical.fixed-left.navbar-expand-md.navbar-light
             i.fas.fa-table
             | Tables
         li.nav-item
-          = link_to "#", class: "nav-link" 
+          = link_to destroy_user_session_path, class: "nav-link" 
             i.fas.fa-sign-in-alt
-            | Login
-        li.nav-item
-          = link_to "#", class: "nav-link" 
-            i.fas.fa-registered
-            | Register
+            | Logout

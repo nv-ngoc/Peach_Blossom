@@ -1,0 +1,34 @@
+nav.navbar.navbar-top.navbar-horizontal.navbar-expand-md.navbar-dark
+  .container.px-4
+    = link_to "#", class: "navbar-brand"
+      = image_tag "white.png"
+    button.navbar-toggler aria-controls="navbarSupportedContent" aria-expanded="false" aria-label=("Toggle navigation") data-target="#navbar-collapse-main" data-toggle="collapse" type="button" 
+      span.navbar-toggler-icon
+    #navbar-collapse-main.collapse.navbar-collapse
+      ul.navbar-nav.ml-auto
+        li.nav-item
+          = link_to "#", class: "nav-link nav-link-icon"
+            i.i.fas.fa-tachometer-alt
+            span.nav-link-inner--text Dashboard
+        li.nav-item
+          = link_to "#", class: "nav-link nav-link-icon"
+            i.fas.fa-user.plus
+            span.nav-link-inner--text Register
+        li.nav-item
+          = link_to "#", class: "nav-link nav-link-icon"
+            i.fas.fa-key
+            span.nav-link-inner--text Login
+        li.nav-item
+          = link_to "#", class: "nav-link nav-link-icon"
+            i.i.far.fa-user-circle
+            span.nav-link-inner--text Profile
+.header.bg-gradient-primary.py-7.py-lg-8
+  .container
+    .header-body.text-center.mb-7
+      .row.justify-content-center
+        .col-lg-5.col-md-6
+          h1.text-white Welcome!
+          p.text-lead.text-light Use these awesome forms to login or create new account in your project for free.
+  .separator.separator-bottom.separator-skew.zindex-100
+    svg preserveaspectratio="none" version="1.1" viewbox=("0 0 2560 100") x="0" xmlns="http://www.w3.org/2000/svg" y="0" 
+      polygon.fill-default points=("2560 0 2560 100 0 100")

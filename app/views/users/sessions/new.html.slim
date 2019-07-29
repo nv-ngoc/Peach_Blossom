@@ -1,0 +1,41 @@
+.bg-default
+  .main-content
+    .container.mt--8.pb-5
+      .row.justify-content-center
+        .col-lg-5.col-md-7
+          .card.shadow.border-0
+            .card-header.bg-transparent.pb-5
+              .text-muted.text-center.mt-2.mb-3
+                small Sign in with
+              .btn-wrapper.text-center
+                = link_to "#", class: "btn btn-neutral btn-icon"
+                  span.btn-inner--icon
+                    = image_tag "github.svg"
+                  span.btn-inner--text Github
+                = link_to "#", class: "btn btn-neutral btn-icon"
+                  span.btn-inner--icon
+                    = image_tag "google.svg"
+                  span.btn-inner--text Google
+            .card-body.px-lg-5.py-lg-5
+              .text-center.text-muted.mb-4
+                small Or sign in with credentials
+              = form_for(resource, as: resource_name, url: new_user_session_path) do |f|
+                .form-group.focused
+                  .input-group.input-group-alternative
+                    .input-group-prepend
+                      span.input-group-text
+                        i.fas.fa-envelope-square
+                    = f.email_field :email, autofocus: true, autocomplete: "email", placeholder: " Email", class: "form-control"
+                .form-group.focused
+                  .input-group.input-group-alternative
+                    .input-group-prepend
+                      span.input-group-text
+                        i.fas.fa-key
+                    = f.password_field :password, autocomplete: "current-password", placeholder: " Password", class: "form-control"
+                .custom-control.custom-control-alternative.custom-checkbox
+                  = f.check_box :remember_me
+                  | &emsp;
+                  label Remember me
+                .text-center
+                  = f.submit "Log in", class: "btn btn-primary my-4"
+                  = render "users/shared/links"

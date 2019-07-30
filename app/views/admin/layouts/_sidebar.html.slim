@@ -1,6 +1,6 @@
 nav#sidenav-main.navbar.navbar-vertical.fixed-left.navbar-expand-md.navbar-light.bg-white
   .container-fluid
-    = link_to "#", class: "navbar-brand pt-0"
+    = link_to admin_root_path, class: "navbar-brand pt-0"
       = image_tag "blue.png"
     #sidenav-collapse-main.collapse.navbar-collapse
       ul.navbar-nav
@@ -8,6 +8,10 @@ nav#sidenav-main.navbar.navbar-vertical.fixed-left.navbar-expand-md.navbar-light
           = link_to "#", class: "nav-link active"
             i.fas.fa-tachometer-alt
             | Dashboard
+        li.nav-item
+          = link_to admin_products_path, class: "nav-link"
+            i.fas.fa-tree
+            | Products
         li.nav-item
           = link_to "#", class: "nav-link"
             i.fas.fa-map-marked-alt

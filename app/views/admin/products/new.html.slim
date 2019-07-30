@@ -1,0 +1,33 @@
+.main-content
+  .col-xl-8.order-xl-1.form-add-product
+    .card.bg-secondary.shadow
+      .card-header.bg-white.border-0
+        .row.align-items-center
+          .col-8
+            h3.mb-0 Add product
+      .card-body
+        = form_for @product, url: admin_products_path do |f|
+          .text-right
+            = f.submit "Add product", class: "btn btn-sm btn-primary"
+          h6.heading-small.text-muted.mb-4 Product information
+          .pl-lg-4
+            .row
+              .col-lg-6
+                .form-group.focused
+                  = f.label :name, class: "form-control-label"
+                  = f.text_field :name, required: true, class: "form-control form-control-alternative"
+              .col-lg-6
+                .form-group
+                  = f.label :price, class: "form-control-label"
+                  = f.text_field :price, required: true, class: "form-control form-control-alternative", type: "number"
+          hr.my-4
+          h6.heading-small.text-muted.mb-4 Description
+          .pl-lg-4
+            .form-group.focused
+              = f.text_area :description, required: true, class:"form-control form-control-alternative", placeholder: "A few words about you ..."
+          hr.my-4
+          h6.heading-small.text-muted.mb-4 Add image
+          .pl-lg-4
+            .fallback
+              = f.fields_for :images do |p|
+                  = p.file_field :image, multiple: true, name: "images[image_link][]", class: "upload-image"

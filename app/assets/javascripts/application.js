@@ -19,3 +19,4 @@
 //= require lib/argon-dashboard.map
 //= require lib/argon-dashboard.min
 //= require lib/argon.min
+//= require custom

@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
+    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type"
     title Admin
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all'
@@ -9,5 +9,4 @@ html
     = render "admin/layouts/sidebar"
   body
   	= render "admin/layouts/header"
-    = render "admin/layouts/footer"
     = yield

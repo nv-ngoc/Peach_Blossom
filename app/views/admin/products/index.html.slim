@@ -5,35 +5,18 @@
         .card.shadow
           .card-header.border-0
             h3.mb-0 Card tables
-            = link_to "Add product", new_admin_product_path, {style: "float: right;"}
+            = link_to "New product", new_admin_product_path, {style: "float: right;"}
           .table-responsive
             table.table.align-items-center.table-flush
               thead.thead-light
                 tr
                   th scope="col"  Product
                   th scope="col"  Price
-                  th scope="col"  Status
                   th scope="col"  Users
                   th scope="col"  Completion
                   th scope="col"  Action 
               tbody
-                = render "row"
+                = render partial: "row", collection: @products, as: :product
           .card-footer.py-4
-            nav aria-label="..." 
-              ul.pagination.justify-content-end.mb-0
-                li.page-item.disabled
-                  a.page-link href="#" tabindex="-1" 
-                    i.fas.fa-angle-left
-                    span.sr-only Previous
-                li.page-item.active
-                  a.page-link href="#"  1
-                li.page-item
-                  a.page-link href="#" 
-                    | 2
-                    span.sr-only (current)
-                li.page-item
-                  a.page-link href="#"  3
-                li.page-item
-                  a.page-link href="#" 
-                    i.fas.fa-angle-right
-                    span.sr-only Next
+            = paginate @products, theme: "twitter-bootstrap-4"
+                  

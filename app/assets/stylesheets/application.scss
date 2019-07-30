@@ -11,9 +11,13 @@
  * It is generally better to create a new file per style scope.
  *
  *= require custom
+ *= require dropzone/dropzone
  *= require lib/argon-dashboard
  *= require lib/argon-dashboard.css
  *= require lib/argon-dashboard.min
+ *= require select2
+ *= require select2-bootstrap
+ *= require fancybox
  */
 @import "bootstrap";
 @import "font-awesome-sprockets";

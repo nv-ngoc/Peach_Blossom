@@ -1,31 +1,26 @@
 tr
   th scope="row" 
     .media.align-items-center
-      = link_to "#", class: "avatar rounded-circle mr-3"
-        = image_tag "bootstrap"
+      = link_to "#", class: "avatar rounded-circle"
+        = image_tag product.images.first.name_url if product.images.present?
       .media-body
-        span.mb-0.text-sm Argon Design System
+        span.mb-0.text-sm &emsp; #{ product.name }
   td
-    | $2,500 USD
-  td
-    span.badge.badge-dot.mr-4
-      i.bg-warning
-      | pending
+    | #{ number_to_currency( product.price ) }
   td
     .avatar-group
       = link_to "#", class: "avatar avatar-sm", :data => { toggle: "tooltip" }, "data-original-title" => "Ryan Tompson"
-        = image_tag "team-1-800x800", class: "rounded-circle"
+        = image_tag "team-4-800x800.jpg", class: "rounded-circle"
   td
     .d-flex.align-items-center
-      span.mr-2 60%
+      span.mr-2 80%
       div
         .progress
           .progress-bar.bg-warning aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" role="progressbar" style=("width: 60%;") 
   td.text-right
     .dropdown
-      a.btn.btn-sm.btn-icon-only.text-light aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" href="#" role="button" 
-        i.fas.fa-ellipsis-v
+      a.btn.btn-sm.btn-icon-only.text-light data-toggle="dropdown" href="#" role="button" 
+        i.fas.fa-chevron-circle-down
       .dropdown-menu.dropdown-menu-right.dropdown-menu-arrow
-        a.dropdown-item href="#"  Action
-        a.dropdown-item href="#"  Another action
-        a.dropdown-item href="#"  Something else here
+        = link_to "Show", admin_product_path(product), class: "dropdown-item"
+        = link_to "Delete", admin_product_path(product), method: :delete, class: "dropdown-item"

@@ -20,3 +20,324 @@ input.form-control.focused{
   border-radius: 5px;
   background: white;
 }
+a.btn.btn-sm.btn-icon-only.text-light{
+  background-color: rebeccapurple;
+}
+#preview_image{
+  margin-top: 5px;
+}
+input[type="file"] {
+  display: block;
+}
+.imageThumb {
+  max-height: 75px;
+  padding: 1px;
+  cursor: pointer;
+}
+.pip {
+  display: inline-block;
+  margin: 10px 10px 0 0;
+}
+.remove {
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+.remove:hover {
+  background: white;
+  color: black;
+}
+textarea#product_description{
+  height: 200px;
+}
+a.page-link{
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.my-border{
+  border: 1px solid red;
+}
+
+/*Project 2*/
+
+.menutren ul li {
+  float: left;
+  list-style: none;
+}
+
+nav.menutren{
+  width: 100%;
+  height: 57px;
+  background: whitesmoke;
+  margin: auto;
+  position: fixed;
+  top: 0px;
+}
+
+.menutren a{
+  text-decoration: none;
+  display: block;
+  padding: 16px 18px;
+  color: black;
+  font-family: tahoma;
+  font-weight: bold;
+}
+
+.menutren ul {
+  margin-left: 10%;
+}
+
+.home{
+  width: 100%;
+  height: 700px;
+  background: url("charity.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.noidung1, .noidung2, .noidung3, .noidung4{
+  height: 800px;
+  padding: 50px 0;
+  text-align: center;
+  color: gray;
+}
+
+.chapter1, .chapter2, .chapter3, .chapter4{
+  height: 1000px;
+  background: url("fundraising.jpg");
+  background-size: cover;
+}
+
+h2.chuto{
+  color: white;
+  font-family: tahoma;
+  font-size: 290px;
+  margin-left: 14%;
+  padding-top: 50px;
+}
+
+.chapter2{
+  background-image: url("partners.jpg");
+}
+
+.chapter3{
+  background-image: url("gallery-1.jpg");
+}
+
+.chapter4{
+  background-image: url("press.jpg");
+}
+
+.nutlentren{
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  background: white;
+  color: #000;
+  padding: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/*Project 3*/
+
+h1.tieude{
+  font-family: tamoha;
+  font-weight: 100;
+  text-align: center;
+  margin: 17px 0;
+  font-size: 30px;
+  margin-bottom: 100px;
+}
+
+body{
+  background: url("nen.jpg");
+}
+
+.noidung{
+  width: 60%;
+  margin: auto;
+}
+
+img.anhnho{
+  float: left;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.vaicaianh{
+  overflow: hidden;
+}
+
+._1motkhoi{
+  border-bottom: 1px solid rgba(128, 128, 128,0.44);
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+
+h2.tdkhoi{
+  height: 80px;
+  font-size: 50px;
+  color: gray;
+  font-weight: 200px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.tdkhoi img{
+  float: right;
+  transition: 0.4s;
+  margin-top: 40px;
+  margin-right: -100px;
+}
+
+h2.tdkhoi:hover img{
+  margin-right: 0px;
+}
+
+h2.tdkhoi:hover{
+  color: lightblue;
+}
+
+.ndkhoi{
+  color: gray;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.tdkhoi.xanh{
+  color: lightblue;
+}
+
+h2.tdkhoi.xanh img{
+  margin-right: 0;
+  transform: rotate(180deg);
+  margin-top: 10px;
+}
+
+/*Project 4*/
+
+.tinto{
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  margin: 20px;
+}
+
+img.layer1{
+  height: 200px;
+}
+
+.xam{
+  width: 300px;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.32);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  transition: 0.4s;
+}
+
+.gradient{
+  width: 300px;
+  height: 200px;
+  background-image: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  transition: 0.4s;
+  opacity: 0.6;
+  opacity: 0;
+}
+
+.hinhvuong{
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  z-index: 3;
+  top: 10%;
+  left: 10%;
+  border: 2px solid white;
+  transition: 0.4s;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.chuto{
+  font-size: 30px;
+  font-family: segoe ui light;
+  position: absolute;
+  left: 0%;
+  z-index: 4;
+  color: white;
+  text-align: center;
+  width: 100%;
+  transition: 0.4s;
+  top: 45%;
+}
+
+.chunho{
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  color: white;
+  z-index: 5;
+  width: 70%;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.4s;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.tinto:hover .chuto{
+  top: 25%;
+}
+
+.tinto:hover .chunho{
+  transform: scale(1);
+  opacity: 1;
+}
+
+.tinto:hover .hinhvuong{
+  transform: scale(1);
+  opacity: 1;
+}
+
+.tinto:hover .xam{
+  opacity: 0;
+}
+
+.tinto:hover .gradient{
+  opacity: 1;
+}
+
+.noidungthem{
+  clear: both;
+}
+
+.loadthem{
+  overflow: hidden;
+  clear: both;
+  width: 200px;
+  margin: auto;
+}
+
+.nutload{
+  border: none;
+  background: lightblue;
+  border: none;
+  padding: 13px;
+  cursor: pointer;
+}
+
+.ratto{
+  width: 1700px;
+  margin: auto;
+}

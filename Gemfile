@@ -22,6 +22,8 @@ gem "jquery-rails"
 gem "font-awesome-sass", "~> 5.8.1"
 gem "devise"
 gem "faker", "~> 1.6", ">= 1.6.6"
+gem "carrierwave"
+gem "dropzonejs-rails"
 
 group :development, :test do
   gem "capybara", ">= 2.15"

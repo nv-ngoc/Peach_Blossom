@@ -13,9 +13,14 @@
 //= require jquery.min
 //= require rails-ujs
 //= require jquery3
+//= require jquery.easing
 //= require popper
 //= require bootstrap
+//= require dropzone
 //= require lib/argon-dashboard
 //= require lib/argon-dashboard.map
 //= require lib/argon-dashboard.min
 //= require lib/argon.min
+//= require ckeditor/init
+//= require select2-full
+//= require custom

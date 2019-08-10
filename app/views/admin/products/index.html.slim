@@ -1,0 +1,22 @@
+.main-content.table-with
+  .container-fluid.mt--7
+    .row
+      .col
+        .card.shadow
+          .card-header.border-0
+            h3.mb-0 Card tables
+            = link_to "New product", new_admin_product_path, {style: "float: right;"}
+          .table-responsive
+            table.table.align-items-center.table-flush
+              thead.thead-light
+                tr
+                  th scope="col"  Product
+                  th scope="col"  Price
+                  th scope="col"  Users
+                  th scope="col"  Completion
+                  th scope="col"  Action 
+              tbody
+                = render partial: "row", collection: @products, as: :product
+          .card-footer.py-4
+            = paginate @products, theme: "twitter-bootstrap-4"
+                  

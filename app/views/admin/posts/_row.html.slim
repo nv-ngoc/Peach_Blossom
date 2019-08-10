@@ -1,0 +1,14 @@
+tr
+  th scope="row"
+    span.mb-0.text-sm &emsp; #{ post.title }
+  td
+    | #{ raw post.content.truncate(30) }
+  td
+    | #{ post.product.name }
+  td.text-right
+    .dropdown
+      a.btn.btn-sm.btn-icon-only.text-light data-toggle="dropdown" href="#" role="button" 
+        i.fas.fa-chevron-circle-down
+      .dropdown-menu.dropdown-menu-right.dropdown-menu-arrow
+        = link_to "Show", admin_post_path(post), class: "dropdown-item"
+        = link_to "Delete", admin_post_path(post), method: :delete, class: "dropdown-item"

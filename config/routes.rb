@@ -13,5 +13,5 @@ Rails.application.routes.draw do
     root "static_page#index"
   end
 
-  root "static_page#new"
+  root "static_page#edit"
 end
